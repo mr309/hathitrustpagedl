@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarklet "Installer"</title>
+</head>
+<body>
+    <h1>Hathi Trust Page Scraper</h1>
+    <div>Instructions: Click and drag the link below to your bookmarks. When viewing a page on Hathi Trust, click the bookmark to download a .png file of the current page.</div>
+    <br>
+    <a href="javascript:(function()%7Bjavascript%3A(()%3D%3E%7Bvar%20url%3Dwindow.location.href%3Bvar%20contentId%3Durl.split(%2F%5B%3D%26%5D%2F)%5B1%5D%3Bvar%20urlImgRoot%3D%22https%3A%2F%2Fbabel.hathitrust.org%2Fcgi%2Fimgsrv%2Fimage%3Fid%3D%22%3Bvar%20pageNum%3Durl.split(%22seq%3D%22)%5B1%5D%3Bvar%20parameters%3D%22size%3D300%3Brotation%3D0%22%3Bvar%20builtUrl%3DurlImgRoot%2BcontentId%2B%22%3B%22%2B%22seq%3D%22%2BpageNum%2B%22%3B%22%2Bparameters%3Bvar%20fileName%3DpageNum%2B%22.png%22%3Bfetch(builtUrl%2C%7B%22headers%22%3A%7B%22accept%22%3A%22*%2F*%22%2C%22accept-language%22%3A%22en-US%2Cen%3Bq%3D0.9%22%2C%22sec-ch-ua%22%3A%22%5C%22%20Not%20A%3BBrand%5C%22%3Bv%3D%5C%2299%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%2290%5C%22%2C%20%5C%22Google%20Chrome%5C%22%3Bv%3D%5C%2290%5C%22%22%2C%22sec-ch-ua-mobile%22%3A%22%3F0%22%2C%22sec-fetch-dest%22%3A%22empty%22%2C%22sec-fetch-mode%22%3A%22cors%22%2C%22sec-fetch-site%22%3A%22same-origin%22%7D%2C%22referrerPolicy%22%3A%22strict-origin-when-cross-origin%22%2C%22body%22%3Anull%2C%22method%22%3A%22GET%22%2C%22mode%22%3A%22cors%22%2C%22credentials%22%3A%22include%22%7D).then(response%3D%3Eresponse.blob()).then(blob%3D%3E%7Bvar%20file%3Dwindow.URL.createObjectURL(blob)%3Bconst%20link%3Ddocument.createElement('a')%3Blink.href%3Dfile%3Blink.download%3DfileName%3Bdocument.body.appendChild(link)%3Blink.click()%3Bdocument.body.removeChild(link)%3Bwindow.URL.revokeObjectURL(blob)%7D)%7D)()%7D)()%3B">HathiTrust Page Scrape</a>
+</body>
+</html>
