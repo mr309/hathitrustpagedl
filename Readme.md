@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Hathi Trust Page Scraper Bookmarklet</h1>
-    <div>Instructions: Create a new bookmark and add the contents of Scraper.js to the address box. When viewing a scanned page on Hathi Trust, click the bookmark to download a .png file of the current page.</div>
+    <div>Instructions: Create a new bookmark and add the contents of Scraper.js to the address box. When viewing a scanned page on Hathi Trust, click the bookmark to download a .png file of the current page. Only for fair use.</div>
     <br>
 </body>
 </html>
